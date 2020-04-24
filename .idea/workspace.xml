@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="916af01b-abd4-436d-8bbf-8c214f6f248b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/VIP-AVIOM-SITM_Event.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/EventType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/ExternalEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/GeneratorEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/ProbabilisticDistribution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/SystemEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="916af01b-abd4-436d-8bbf-8c214f6f248b" name="Default Changelist" comment="ProbabilisticDistribution class fixed and visualization available">
+      <change afterPath="$PROJECT_DIR$/.idea/EventV2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/PDTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/GeneratorEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/EventGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/ProbabilisticDistribution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ProbabilisticDistribution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestDistributions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/TestDistributions.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,24 +53,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1Zv1ZZwgVx4bb6on163WXjV7T7I" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -58,8 +75,8 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
-    <configuration name="TestDistributions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.TestDistributions" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ui.Main" />
       <module name="EventV2" />
       <extension name="coverage">
         <pattern>
@@ -73,7 +90,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestDistributions" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -90,64 +107,116 @@
       <workItem from="1585704811253" duration="7284000" />
       <workItem from="1585712432943" duration="1589000" />
       <workItem from="1585783707090" duration="4069000" />
+      <workItem from="1586741995179" duration="778000" />
+      <workItem from="1586745966964" duration="1086000" />
+      <workItem from="1586783712204" duration="4437000" />
+      <workItem from="1587359244674" duration="15645000" />
+      <workItem from="1587379995894" duration="201000" />
+      <workItem from="1587388422046" duration="3307000" />
+      <workItem from="1587698394795" duration="1173000" />
+      <workItem from="1587701474035" duration="7797000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="ProbabilisticDistribution class fixed and visualization available" />
+    <option name="LAST_COMMIT_MESSAGE" value="ProbabilisticDistribution class fixed and visualization available" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="26" key="#Project_Structure" timestamp="1585783742186">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="275" y="25" key="#Project_Structure" timestamp="1587380179179">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="25" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1585704966321" />
+    <state x="275" y="25" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1587380179179" />
     <state x="275" y="26" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1585783742186" />
-    <state x="137" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585792962792">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="137" y="37" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587378834651">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="137" y="37" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1587378834651" />
     <state x="137" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1585792962792" />
-    <state x="488" y="93" key="#com.intellij.ide.util.MemberChooser" timestamp="1585793038442">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="488" y="88" key="#com.intellij.ide.util.MemberChooser" timestamp="1587706889305">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="488" y="88" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1587706889305" />
     <state x="488" y="93" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1585793038442" />
+    <state x="412" y="166" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1587378832959">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="412" y="166" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1587378832959" />
+    <state x="317" y="289" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1587390857405">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="317" y="289" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1587390857405" />
+    <state x="462" y="118" key="FileChooserDialogImpl" timestamp="1587700787556">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587700787556" />
     <state x="505" y="279" key="Github.CreateGistDialog" timestamp="1585713587055">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="505" y="279" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1585713587055" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1585712102559">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1587709140774">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585712102559" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1585712102558">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587709140774" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1587709140774">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585712102558" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1585712102558">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587709140774" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1587709140774">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585712102558" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1585712102558">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587709140774" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1587709140774">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585712102558" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587709140774" />
     <state x="186" y="9" key="SettingsEditor" timestamp="1585713236522">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="186" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585713236522" />
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1585712437176">
+    <state x="260" y="181" key="com.intellij.ide.util.TipDialog" timestamp="1587388464479">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585712437176" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1585709971124">
+    <state x="260" y="181" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587388464479" />
+    <state x="65" y="24" key="new project wizard" timestamp="1587700878823">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585709971124" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585713226378">
+    <state x="65" y="24" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1587700878823" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1587703784566">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585713226378" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1587703784566" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1587376342608">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1587376342608" />
   </component>
 </project>

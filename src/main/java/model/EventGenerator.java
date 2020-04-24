@@ -1,9 +1,9 @@
 package model;
 
-public class GeneratorEvent implements SystemEvent,ExternalEvent{
+public class EventGenerator implements SystemEvent,ExternalEvent{
     private EventType field;
 
-    public GeneratorEvent() {
+    public EventGenerator() {
 
     }
     public Event generateNextEvent() {
